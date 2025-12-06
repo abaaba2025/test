@@ -162,7 +162,7 @@ void Track_Detect(void) {
     track_dat = 0x00;
 //    uint8_t cnt = 0;
 //    for(uint8_t i = 0;i < 5; i++){
-//    // 读取8路循迹数据（低电平=黑线）
+//    // 读取8路循迹数据（高电平=黑线）
 //    	if(HAL_GPIO_ReadPin(TRACK_PORT, TRACK1_PIN) == GPIO_PIN_SET){
 //    		track_dat |= 0x01;
 //    		cnt ++;
@@ -385,3 +385,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
